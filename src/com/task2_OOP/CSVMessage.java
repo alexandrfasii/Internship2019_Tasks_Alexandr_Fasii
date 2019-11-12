@@ -1,12 +1,15 @@
 package com.task2_OOP;
 
 public class CSVMessage implements MessageInterface {
-    private String name = "CSV";
-    private String message = "no csv message";
+    private String name;
+    private String message;
 
     public CSVMessage () {
+        this.name = "CSV";
+        this.message = "no csv message";
     }
     public CSVMessage (String message) {
+        this.name = "CSV";
         this.message = message;
     }
     public CSVMessage (String name, String message) {

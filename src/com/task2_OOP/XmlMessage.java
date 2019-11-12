@@ -1,14 +1,19 @@
 package com.task2_OOP;
 
 public class XmlMessage implements MessageInterface {
-    private String name = "XML";
-    private String message = "no xml message";
+    private String name;
+    private String message;
 
     public XmlMessage () {
+        this.name = "XML";
+        this.message = "no xml message";
     }
+
     public XmlMessage (String message) {
+        this.name = "XML";
         this.message = message;
     }
+
     public XmlMessage (String name, String message) {
         this.name = name;
         this.message = message;

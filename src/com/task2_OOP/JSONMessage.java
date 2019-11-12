@@ -1,19 +1,22 @@
 package com.task2_OOP;
 
 public class JSONMessage implements MessageInterface {
-    private String name = "JSON";
-    private String message = "no json message";
+    private String name;
+    private String message;
+
+    public JSONMessage() {
+        this.name = "JSON";
+        this.message = "no json message";
+    }
 
     public JSONMessage(String message) {
+        this.name = "JSON";
         this.message = message;
     }
 
     public JSONMessage(String name, String message) {
         this.name = name;
         this.message = message;
-    }
-
-    public JSONMessage() {
     }
 
     @Override
