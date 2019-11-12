@@ -1,54 +1,54 @@
 package com.task2_OOP;
 
 public class XmlMessage implements MessageInterface {
-    private String name = "XMLMessage";
-    private String body = "no xml message";
+    private String type = "XML";
+    private String message = "no xml message";
 
     public XmlMessage () {
     }
-    public XmlMessage (String inputText) {
-        this.body = inputText;
+    public XmlMessage (String message) {
+        this.message = message;
     }
-    public XmlMessage (String name, String body) {
-        this.name = name;
-        this.body = body;
+    public XmlMessage (String type, String message) {
+        this.type = type;
+        this.message = message;
     }
 
     @Override
     public void prepareMessage() {
-        System.out.println("Message Type: " + this.name);
-        System.out.println("Message: " + this.body);
+        System.out.println("Message Type: " + this.type);
+        System.out.println("Message: " + this.message);
     }
 
     @Override
     public void prepareMessage(String message) {
-        this.body = message;
-        System.out.println("Message Type: " +this.name);
-        System.out.println("Message: " +this.body);
+        this.message = message;
+        System.out.println("Message Type: " +this.type);
+        System.out.println("Message: " +this.message);
     }
 
     @Override
     public void prepareMessage(String message1, String message2) {
-        this.body = message1 + " , " + message2;
-        System.out.println("Message Type: " +this.name);
-        System.out.println("Message: " + this.body);
+        this.message = message1 + " , " + message2;
+        System.out.println("Message Type: " +this.type);
+        System.out.println("Message: " + this.message);
     }
 
     @Override
-    public String getName() {
-        return this.name;
+    public String getType() {
+        return this.type;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setType(String type) {
+        this.type = type;
     }
 
     @Override
-    public String getBody() {
-        return body;
+    public String getMessage() {
+        return message;
     }
 
-    public void setBody(String body) {
-        this.body = body;
+    public void setMessage(String message) {
+        this.message = message;
     }
 }

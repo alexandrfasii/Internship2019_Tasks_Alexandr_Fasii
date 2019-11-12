@@ -2,9 +2,9 @@ package com.task2_OOP;
 
 public interface MessageInterface {
     void prepareMessage();
-    void prepareMessage(String a);
-    void prepareMessage(String a, String b);
+    void prepareMessage(String message);
+    void prepareMessage(String message1, String message2);
 
-    String getBody();
-    String getName();
+    String getMessage();
+    String getType();
 }
