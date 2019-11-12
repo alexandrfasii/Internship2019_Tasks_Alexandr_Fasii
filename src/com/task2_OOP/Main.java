@@ -5,9 +5,9 @@ public class Main {
         XmlMessage xmlMessage = new XmlMessage("An XML message is displayed."); //Initial XML message.
 
         MessageConverter converter = new MessageConverter();
-        JSONMessage jsonMessage = converter.convertToJSON(xmlMessage); //Convert to JSON. (name changes, body remains)
+        JSONMessage jsonMessage = converter.convertToJSON(xmlMessage); //Convert to JSON. (name changes, message remains)
 
-        CSVMessage  csvMessage = converter.convertToCSV(jsonMessage);  //Convert to CSV.  (name changes, body remains)
+        CSVMessage  csvMessage = converter.convertToCSV(jsonMessage);  //Convert to CSV.  (name changes, message remains)
 
         MessageProcessor msgProcessor = new MessageProcessor();
         msgProcessor.add(xmlMessage);

@@ -6,5 +6,5 @@ public interface MessageInterface {
     void prepareMessage(String message1, String message2);
 
     String getMessage();
-    String getType();
+    String getName();
 }
