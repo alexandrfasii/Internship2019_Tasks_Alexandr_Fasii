@@ -40,13 +40,11 @@ public class FootballTeam extends AbstractTeam{
         //Next 7 lines of code is a kind of formatting the output table.
         int maxNameLength = 20;
         int spacesToAdd = maxNameLength - name.length(); //The amount of spaces to add till the name has the maxNameLength(20);
-        String tempBox;                                  //A simple temporary box for using in 'for' statement.
+        String nameOutput = name;                        //The 'nameOutput' has been added as a temporary container for the name's value.
         for (int i = 0; i <spacesToAdd; i++) {
-            tempBox = name;
-            name = name + " ";                          // Adding spaces to maximum name length.
+            nameOutput = nameOutput + " ";               // Adding spaces to maximum name length.
         }
-        System.out.println(name + "" + players + "           " + rating);
-        this.name = name.replace(" ", "");// Removing the added spaces.
+        System.out.println(nameOutput + "" + players + "           " + rating);
     }
 
     @Override
