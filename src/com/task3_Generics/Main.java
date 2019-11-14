@@ -6,9 +6,9 @@ public class Main {
 
         BaseballTeam baseballTeam1 = new BaseballTeam("Alligator", 4, 100);
         BaseballTeam baseballTeam2 = new BaseballTeam("The Eagle", 4, 95);
-        BaseballTeam baseballTeam3 = new BaseballTeam("Freedom", 4, 93);
-        BaseballTeam baseballTeam4 = new BaseballTeam("Champions", 4, 97);
-        BaseballTeam baseballTeam5 = new BaseballTeam("Pokemon", 4, 102);
+        BaseballTeam baseballTeam3 = new BaseballTeam("Freedom", 4, 85);
+        BaseballTeam baseballTeam4 = new BaseballTeam("Champions", 4, 70);
+        BaseballTeam baseballTeam5 = new BaseballTeam("Pokemon", 4, 50);
 
         baseballMajorLeague.add(baseballTeam3);
         baseballMajorLeague.add(baseballTeam4);

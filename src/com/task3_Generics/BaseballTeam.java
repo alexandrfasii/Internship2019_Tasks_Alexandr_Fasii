@@ -3,12 +3,12 @@ package com.task3_Generics;
 public class BaseballTeam extends AbstractTeam {
     private String name;
     private int players;
-    private int avgWeight;
+    private int rating;
 
-    public BaseballTeam(String name, int players, int avgWeight) {
+    public BaseballTeam(String name, int players, int rating) {
         this.name = name;
         this.players = players;
-        this.avgWeight = avgWeight;
+        this.rating = rating;
     }
 
     public void setPlayers(int players) {
@@ -19,12 +19,12 @@ public class BaseballTeam extends AbstractTeam {
         return players;
     }
 
-    public void setAvgWeight(int avgWeight) {
-        this.avgWeight = avgWeight;
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 
-    public int getAvgWeight() {
-        return avgWeight;
+    public int getRating() {
+        return rating;
     }
 
     @Override
@@ -41,7 +41,7 @@ public class BaseballTeam extends AbstractTeam {
         for (int i = 0; i <spacesToAdd; i++) {
             nameOutput = nameOutput + " ";               // Adding spaces till maximum name length.
         }
-        System.out.println(nameOutput + "" + players + "           " + avgWeight);
+        System.out.println(nameOutput + "" + players + "           " + rating);
     }
 
     @Override
@@ -49,7 +49,7 @@ public class BaseballTeam extends AbstractTeam {
         return "BaseballTeam{" +
                 "name='" + name + '\'' +
                 ", players=" + players +
-                ", avgWeight=" + avgWeight +
+                ", avgWeight=" + rating +
                 '}';
     }
 }
