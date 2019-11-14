@@ -42,7 +42,7 @@ public class FootballTeam extends AbstractTeam{
         int spacesToAdd = maxNameLength - name.length(); //The amount of spaces to add till the name has the maxNameLength(20);
         String nameOutput = name;                        //The 'nameOutput' has been added as a temporary container for the name's value.
         for (int i = 0; i <spacesToAdd; i++) {
-            nameOutput = nameOutput + " ";               // Adding spaces to maximum name length.
+            nameOutput = nameOutput + " ";               // Adding spaces till maximum name length.
         }
         System.out.println(nameOutput + "" + players + "           " + rating);
     }
